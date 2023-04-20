@@ -1,0 +1,19 @@
+<div [ngSwitch]="iconName">
+    <!-- [] is same as *ng -->
+    <div *ngSwitchCase=" 'empty' ">
+        <!-- <div *ngSwitchCase=" 'empty' "> to passs string inside  *ngSwitchCase="  ", use single quote ''  -->
+        <fa-icon [icon]="faPen" class="icon"></fa-icon>
+    </div>
+    <div *ngSwitchCase=" 'cross' ">
+
+        <fa-icon [icon]="faTimes" class="icon text-primary"></fa-icon>
+    </div>
+    <div *ngSwitchCase=" 'circle' ">
+
+        <fa-icon [icon]="faCircle" class="icon text-danger"></fa-icon>
+    </div>
+    <div *ngSwitchDefault>
+        Something is not right!
+    </div>
+
+</div>
